@@ -1,0 +1,32 @@
+---
+title: Datasets
+layout: page
+tags: ['page']
+pageOrder: 2
+---
+
+To help computers understand 3D environments, we have worked on collecting a variety of datasets. We have a) annotated 3D reconstructions of real world environments, b) synthetic scenes that are composed of individual 3D objects (these scenes can be manipulated and editted), c) a dataset of semantically annotated 3D objects that can be linked to other datasets.
+
+<div class="panel-body">
+<% for p in @datasets: %>
+  <div class="row paper vertical-center">
+    <div class="col-sm-3 paper-img">
+    <% if p.img: %>
+      <a href="<%= p.web %>"><img src="<%= p.img %>" alt="<%= p.title %>" class="img-responsive" style="width: 300px;"/></a>
+      &nbsp;
+    <% end %>
+    </div>
+    <div class="col-sm-9">
+      <h4 class="red">
+        <% if p.web: %><a href="<%= p.web %>"><% end %>
+        <%= p.title %>
+        <% if p.web: %></a><% end %>
+      </h4>
+      <%- p.text %><br>
+      <% for k,v of p: %>
+          <% if k != 'name' and k != 'web' and k != 'title' and k != 'authors' and k != 'img' and k != 'date' and k != 'text' and k != 'labels': %> | <a href="<%= v %>"><%= k %></a> <% end %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+</div>
