@@ -5,4 +5,4 @@ tags: ['page']
 pageOrder: 4
 ---
 
-TODO: Contacts
+Feel free to contact us at <code>msavva at cs dot stanford dot edu</code>
