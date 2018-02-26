@@ -42,7 +42,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/projects.html">SmartScenes</a>
+        <a class="navbar-brand">SmartScenes</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
