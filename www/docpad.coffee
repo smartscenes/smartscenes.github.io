@@ -114,34 +114,34 @@ docpadConfig = {
 
   # Here we can define handlers for events that DocPad fires
   # You can find a full listing of events on the DocPad Wiki
-  events:
-    # prepend site.url when not in development (i.e., when running docpad generate --env static)
-    renderDocument: (opts) ->
-      return if 'development' in @docpad.getEnvironments()
-      if opts.extension is 'html'
-          siteUrl = @docpad.getConfig().templateData.site.url.replace(/\/+$/, '')
-          opts.content = opts.content.replace(/(['"])\/([^\/])/g, "$1#{siteUrl}/$2")
+  # events:
+    # # prepend site.url when not in development (i.e., when running docpad generate --env static)
+    # renderDocument: (opts) ->
+    #   return if 'development' in @docpad.getEnvironments()
+    #   if opts.extension is 'html'
+    #       siteUrl = @docpad.getConfig().templateData.site.url.replace(/\/+$/, '')
+    #       opts.content = opts.content.replace(/(['"])\/([^\/])/g, "$1#{siteUrl}/$2")
 
     # Server Extend
     # Used to add our own custom routes to the server before the docpad routes are added
-    serverExtend: (opts) ->
-      # Extract the server from the options
-      {server} = opts
-      docpad = @docpad
+    # serverExtend: (opts) ->
+    #   # Extract the server from the options
+    #   {server} = opts
+    #   docpad = @docpad
 
-      # As we are now running in an event,
-      # ensure we are using the latest copy of the docpad configuraiton
-      # and fetch our urls from it
-      latestConfig = docpad.getConfig()
-      oldUrls = latestConfig.templateData.site.oldUrls or []
-      newUrl = latestConfig.templateData.site.url
+    #   # As we are now running in an event,
+    #   # ensure we are using the latest copy of the docpad configuraiton
+    #   # and fetch our urls from it
+    #   latestConfig = docpad.getConfig()
+    #   oldUrls = latestConfig.templateData.site.oldUrls or []
+    #   newUrl = latestConfig.templateData.site.url
 
-      # Redirect any requests accessing one of our sites oldUrls to the new site url
-      server.use (req,res,next) ->
-        if req.headers.host in oldUrls
-          res.redirect(newUrl+req.url, 301)
-        else
-          next()
+    #   # Redirect any requests accessing one of our sites oldUrls to the new site url
+    #   server.use (req,res,next) ->
+    #     if req.headers.host in oldUrls
+    #       res.redirect(newUrl+req.url, 301)
+    #     else
+    #       next()
 }
 
 
