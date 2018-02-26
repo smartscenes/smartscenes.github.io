@@ -5,7 +5,7 @@ tags: ['page']
 pageOrder: 2
 ---
 
-To help computers understand 3D environments, we have worked on collecting a variety of datasets. We have a) annotated 3D reconstructions of real world environments, b) synthetic scenes that are composed of individual 3D objects (these scenes can be manipulated and editted), c) a dataset of semantically annotated 3D objects that can be linked to other datasets.
+To help computers understand 3D environments, we have worked on collecting and semantically annotating a variety of large scale 3D datasets. We have annotated a) 3D reconstructions of real world environments, b) synthetic scenes that are composed of individual 3D objects (allowing for manipulation and editing), c) large datasets of 3D objects that can be linked to other datasets and used to construct new 3D scenes.
 
 <div class="panel-body">
 <% for p in @datasets: %>

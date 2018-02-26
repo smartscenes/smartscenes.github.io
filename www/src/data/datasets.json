@@ -3,7 +3,7 @@
 	"title": "Matterport3D: Learning from RGB-D Data in Indoor Environments",
 	"name": "matterport3d",
 	"date": "2017-10",
-	"text": "The Matterport3D dataset contains data captured throughout 90 properties with a Matterport Pro Camera.", 
+	"text": "The Matterport3D dataset contains RGBD data and 3D reconstructions of 90 properties captured with Matterport cameras.",
 	"web": "https://niessner.github.io/Matterport/",
 	"img": "/images/matterport3d.png",
 	"labels": ["rgbd", "real", "scene"]
@@ -12,7 +12,7 @@
 	"title": "ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes",
 	"name": "scannet",
 	"date": "2017-02",
-	"text": "The ScanNet dataset consists of 1513 RGBD scans in 707 real world indoor environments that have been reconstructed and semantically annotated.  The data can be used for semantic understanding tasks such as semantic labeling of voxels.", 
+	"text": "The ScanNet dataset consists of 1513 RGBD scans in 707 real world indoor environments that have been reconstructed and semantically annotated.  The data can be used for semantic understanding tasks such as semantic labeling of voxels.",
 	"web": "http://www.scan-net.org/",
 	"img": "/images/scannet.jpg",
 	"labels": ["rgbd", "real", "scene"]
@@ -21,7 +21,7 @@
 	"title": "SUNCG: A Large 3D Model Repository for Indoor Scenes",
 	"name": "suncg",
 	"date": "2016-11",
-	"text": "The SUNCG dataset consists of over 45K synthetic scenes created by humans using 2K models.  The data was collected from Planner5d.", 
+	"text": "The SUNCG dataset consists of over 45K synthetic scenes created by people using 2K models.  The data was collected from Planner5D.", 
 	"web": "http://suncg.cs.princeton.edu/",
 	"img": "/images/suncg.png",
 	"labels": ["synthetic", "scene", "object"]
@@ -30,7 +30,7 @@
 	"title": "PiGraphs dataset",
 	"name": "pigraphs",
 	"date": "2016-07",
-	"text": "The PiGraphs dataset consists of 26 reconstructed RGBD scans with recorded actions and annotated interaction", 
+	"text": "The PiGraphs dataset consists of 26 reconstructed RGBD scans with recordings of people performing common actions and annotated interactions between the people and objects.",
 	"web": "http://graphics.stanford.edu/projects/pigraphs/",
 	"img": "/images/pigraphs.png",
 	"labels": ["rgbd", "real", "scene", "action"]
@@ -39,7 +39,7 @@
 	"title": "Stanford Scene Database",
 	"name": "ssdb",
 	"date": "2011-11",
-	"text": "The Stanford Scene Database consists of 133 synthetic scenes created by humans.", 
+	"text": "The Stanford Scene Database consists of 133 synthetic scenes created by people.",
 	"web": "http://graphics.stanford.edu/projects/scenesynth/",
 	"img": "/images/ssdb.png",
 	"labels": ["synthetic", "scene", "object"]
@@ -48,7 +48,7 @@
 	"title": "ShapeNet: An Information-Rich 3D Model Repository",
 	"name": "shapenet",
 	"date": "2011-11",
-	"text": "ShapeNet is an ongoing effort collect and enrich 3D models with semantic information.", 
+	"text": "ShapeNet is an ongoing effort to collect and enrich 3D models with semantic information.",
 	"web": "https://www.shapenet.org/",
 	"img": "/images/shapenet.png",
 	"labels": ["synthetic", "object"]
