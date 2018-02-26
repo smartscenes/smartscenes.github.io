@@ -15,7 +15,6 @@ We seek to answer a number of research questions:
 - What are good representations for 3D scenes?  What features of 3D scene representations for real environments are salient for people?
 
 #### Scene understanding and representation
-![Matterport3D](/images/matterport3d.png)
 
 Underlying any attempt at understanding environments, we must consider how environments are to be represented.  What properties of a representation are necessary to allow us to generate new environments and allow users to easily manipulate and interact with a 3D virtual environment?
 
