@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+     More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Our site title and description -->
+  <title>Projects | SmartScenes: Semantically-enriched 3D Scenes</title>
+  <meta name="description" content="SmartScenes: Semantically-enriched 3D Scenes" />
+  <meta name="keywords" content="computer graphics, computer vision, research, 3D scenes, semantics" />
+  <meta name="author" content="Manolis Savva" />
+
+  <!-- Output DocPad produced meta elements -->
+  <meta name="generator" content="DocPad v6.79.4" />
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- Shims: IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Styles -->
+  <link  rel="stylesheet" href="https://smartscenes.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://smartscenes.github.io/styles/style.css" />
+</head>
+<body>
+  <!-- Menu -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://smartscenes.github.io/projects.html">SmartScenes</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          
+            <li
+              typeof="sioc:Page"
+              about="https://smartscenes.github.io/pages/projects"
+              class="active"
+            >
+              <a href="https://smartscenes.github.io/pages/projects" property="dc:title">
+                Projects
+              </a>
+            </li>
+          
+            <li
+              typeof="sioc:Page"
+              about="https://smartscenes.github.io/pages/datasets"
+              class=""
+            >
+              <a href="https://smartscenes.github.io/pages/datasets" property="dc:title">
+                Datasets
+              </a>
+            </li>
+          
+            <li
+              typeof="sioc:Page"
+              about="https://smartscenes.github.io/pages/code"
+              class=""
+            >
+              <a href="https://smartscenes.github.io/pages/code" property="dc:title">
+                Code
+              </a>
+            </li>
+          
+            <li
+              typeof="sioc:Page"
+              about="https://smartscenes.github.io/pages/contact"
+              class=""
+            >
+              <a href="https://smartscenes.github.io/pages/contact" property="dc:title">
+                Contact
+              </a>
+            </li>
+          
+        </ul>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <section id="content" class="content">
+      <article id="page" class="page">
+  <h1>Projects</h1>
+  <div class="page-content"><p>We have worked on various projects towards obtaining a <em>concrete, grounded, semantic</em> understanding of 3D environments.  What do we mean by understanding of 3D environments?  Our key insight is viewing real environments as spaces in which human actions take place.  Indoor spaces in particular are canvases that are designed by people to facilitate everyday human actions.  As people spend the vast majority of their time indoors, the focus of visual computing research on understanding of interiors is increasingly important.</p>
+<p>We seek to answer a number of research questions:</p>
+<ul>
+<li>How do people interact with environments in the real world?  What actions can they take?  Where can they perform certain actions?  How are objects arranged in an environment to enable actions?</li>
+<li>How do environments evolve and change over time?  How do human actions change an environment?</li>
+<li>Can we learn a unified model of environments from data?  How do we encode common knowledge about environments in this model?</li>
+<li>How do people name objects in real scenes?  How are these names dependent on the appearance, functionality, and context?</li>
+<li>What are good representations for 3D scenes?  What features of 3D scene representations for real environments are salient for people?</li>
+</ul>
+<h4 id="scene-understanding-and-representation">Scene understanding and representation</h4>
+<p>Underlying any attempt at understanding environments, we must consider how environments are to be represented.  What properties of a representation are necessary to allow us to generate new environments and allow users to easily manipulate and interact with a 3D virtual environment?</p>
+<p>We believe that a structured and relationship-based representation enables easy manipulation of scenes.  Thus, in many of our projects, we represent scenes as graphs that encode objects and their semantic relationships.  In <b>Characterizing Structural Relationships in Scenes using Graph Kernels</b> (<a href="http://msavva.github.io/files/graphkernel.pdf">pdf</a>), we use graphs to represent scenes and define a similarity function between the graphs to enable retrieval of similar scenes.  The representation of a scene as semantic graph is used in many of the projects described below.</p>
+<p><div style="text-align: center;"></p>
+<p><h2>Human-centric understanding of 3D environments</h2>
+<img src="https://smartscenes.github.io/images/pigraphs_full.png" style="width: 800px;">
+</div>
+<br></p>
+<p>A key to understanding real world environments is to examine how people interact with their surroundings and how the environment is structured and designed to support human activities.  This is especially true of indoor environments, where architects, builders, and designers have specifically created spaces for us to live and work in.  We view environments as <em>spaces for action</em>.</p>
+<ul>
+<li><b>SceneGrok</b> (<a href="http://graphics.stanford.edu/projects/scenegrok/">webpage</a>) asks the question <em>where can a person do action X?</em> in a given 3D scene.</li>
+<li><b>Activity based scene synthesis</b> (<a href="http://graphics.stanford.edu/projects/actsynth/">webpage</a>) shows that knowledge of human activities be used to help us arrange objects into more plausible 3D scenes.</li>
+<li><b>PiGraphs</b> (<a href="http://graphics.stanford.edu/projects/pigraphs/">webpage</a>) asks the question <em>what does a static snapshot of a interaction such as &#39;watching TV&#39; look like</em>?  In this project we create a system that generates both the pose of the person and arranges objects with respect to the pose to demonstrate a particular interaction.</li>
+</ul>
+<p><div style="text-align: center;"></p>
+<p><h2>Data-based 3D scene synthesis</h2>
+<img src="https://smartscenes.github.io/images/scenesynth_full.jpg" style="width: 800px;">
+</div>
+<br></p>
+<p>Understanding can be demostrated by building a model from which examples can be generated.  For us, that means that building a generative model of environments that we can use to create new environments.  As it can be difficult to specify by hand the different rules that give rise to indoor environments, we believe it is important to learn these models from data.  To that end, we have a series of projects that aim to learn common sense priors on the arrangement of objects and use those priors to synthesize new scenes or to make changes to existing scenes.</p>
+<ul>
+<li><b>Example-based 3D scene synthesis</b> (<a href="http://graphics.stanford.edu/projects/scenesynth/">webpage</a>)  Content creation is a time-consuming and challenging task.  In this project, we use object statistics and arrangement priors learned from a dataset of synthetic scenes to generate similar yet novel scenes given a few examples.</li>
+<li><b>Activity-based 3D scene synthesis</b> (<a href="http://graphics.stanford.edu/projects/actsynth/">webpage</a>) As indoor environments are spaces for action, how objects are arranged is often a consequence of what actitivies the environment is designed to support.  In this project, we use knowledge of human actions to improve arrangement of the objects into plausible 3D scenes.</li>
+<li><b>Text to 3D scene generation</b> (<a href="https://nlp.stanford.edu/data/text2scene.shtml">webpage</a>, <a href="https://dovahkiin.stanford.edu/fuzzybox/text2scene.html">demo</a>) A natural way for people to communicate what they want is via language.  In this project, we synthesize novel scenes based on natural language descriptions such as <em>&quot;a living room with a red couch&quot;</em>.</li>
+<li><b>Scene editing</b> (<a href="https://arxiv.org/abs/1703.00061">paper</a>, <a href="https://dovahkiin.stanford.edu/fuzzybox/scene-suggest.html">demo</a>)  Designing 3D scenes with current interfaces is a challenging and effortful task.  In this project, we seek to facilitate scene editing by allowing users to select an area where they would like to position an object, and then using priors of what objects typically occur at that location, to suggest and automatically place objects at an appropriate orientation and scale.</li>
+</ul>
+<p><div style="text-align: center;"></p>
+<p><h2>Learning from 3D environments</h2>
+<img src="https://smartscenes.github.io/images/pbrs.jpg" style="width: 800px;">
+</div>
+<br></p>
+<p>Since a big focus of our research is in leveraging 3D data for learning, we have helped to create several large semantically annotated 3D datasets (see <a href="datasets.html">datasets</a> for more details).  We want to leverage virtualizations of real 3D environments to create improved synthetic environments, and use existing 3D data to improve virtualizations of real environments.  We are also interested in exploring whether synthetic data can be used to generate training data for scene understanding.</p>
+<ul>
+<li><b>Semantic scene completion</b> (<a href="http://vision.princeton.edu/projects/2016/SSCNet/">webpage</a>)  From a single depth image, can we leverage synthetic data to produce a 3D voxelization of the space with predicted semantic labels for both observed and occluded regions?</li>
+<li><b>Physically-based rendering</b> (<a href="http://robots.princeton.edu/projects/2016/PBRS/">webpage</a>) Can we utilize physically-based renderings of synthetic 3D scenes as training data for improving performance on common vision tasks such as surface normal estimation and semantic segmentation?</li>
+<li><b>Learning where to look</b> (<a href="https://arxiv.org/abs/1704.02393">pdf</a>) Training data generation for vision tasks that rely on renderings from a single viewpoint, requires a strategy for determining viewpoints that are appropriate.  In this project, we generate viewpoints for a 3D space that semantically match those found in a reference set of images.</li>
+</ul>
+<p><div style="text-align: center;"></p>
+<p><h2>Indoor simulation</h2>
+<img src="https://smartscenes.github.io/images/minos_suncg_scenes.png" style="width: 800px;">
+</div>
+<br></p>
+<p>We believe that true understanding goes beyond passive recognition.  An agent must be able to interact with objects in the environment and to observe changes.  To enable understanding of environments via interaction, we have developed a multimodal indoor simulator platform:</p>
+<ul>
+<li><b>MINOS: Multimodal Indoor Simulator</b> (<a href="https://minosworld.github.io/">webpage</a>)</li>
+</ul>
+<p>We hope that this indoor simulation platform can be used by researchers in vision, robotics, natural language processing, and machine learning to investigate a variety of open research questions revolving around intelligent behavior of embodied agents in 3D interior environments.</p>
+</div>
+</article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="pull-left">&copy; Stanford Computer Graphics Lab 2018</p>
+      <p class="pull-right">
+        This website was last updated at 2018-02-26T05:58:55.385Z
+      </p>
+    </footer>
+  </div><!-- /container -->
+
+  <!-- Scripts -->
+  <script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="https://smartscenes.github.io/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"></script><script defer="defer"  src="https://smartscenes.github.io/scripts/script.js"></script>
+</body>
+</html>
