@@ -22,3 +22,11 @@ The SmartsScene Toolkit code is a centralized repository of many of our tools an
 <br>
 
 MINOS is a multimodal indoor simulation platform for training and benchmarking intelligent embodied agents.  The code for the MINOS simulator is available at: https://minosworld.github.io/
+
+<div style="text-align: center;">
+<h2>WebSceneStudio</h2>
+<img src="/images/webscenestudio.png" style="width: 800px;">
+</div>
+<br>
+
+WebSceneStudio is a research-focused, web-based 3D scene design and editing interface.  The code is available at: https://github.com/msavva/WebSceneStudio
